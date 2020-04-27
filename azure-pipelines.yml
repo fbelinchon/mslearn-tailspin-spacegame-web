@@ -7,7 +7,9 @@ trigger:
 - build-pipeline
 
 pool:
-  vmImage: 'windows-latest'
+  vmImage: 'Myagentpool'
+  demands:
+  - npm
 
 variables:
   solution: '**/*.sln'
